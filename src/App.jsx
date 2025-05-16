@@ -1,4 +1,5 @@
 import './App.css'
+import PixelCard from './components/PixelCard.jsx';
 import Airdrop from "./Airdrop.jsx";
 import {
   ConnectionProvider,
@@ -19,17 +20,21 @@ import "@solana/wallet-adapter-react-ui/styles.css";
 
 function App() {
   return (
-    <>                              
-      <ConnectionProvider endpoint={'https://mainnet.helius-rpc.com/?api-key=e9a32938-d055-4225-8979-10aa77f1bad5'}>
+    <>     
+    <PixelCard className="custom-spotlight-card" spotlightColor="rgba(0, 229, 255, 0.2)">               
+    <div className='container'>    
+      <ConnectionProvider endpoint={'https://solana-devnet.g.alchemy.com/v2/BkS1vuFaAKpDzB7HKWiwuPXkfsl-Hx7b'}>
         <WalletProvider wallets={[]} autoConnect>
           <WalletModalProvider>
-          <WalletMultiButton/>
+          <WalletMultiButton className='button'/>
             <WalletDisconnectButton/>
-              <h1>Hello react</h1>
+
               <Airdrop></Airdrop>
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
+      </div>      
+      </PixelCard>
     </> 
   );
 }

@@ -1,7 +1,8 @@
 import "./../App.css";
 import { motion } from "framer-motion";
 import PixelCard from "./PixelCard.jsx";
-import Airdrop from "./Airdrop.jsx";
+import Airdrop from "./Airdrop.jsx";;
+import 'animate.css';
 import {
   ConnectionProvider,
   WalletProvider,
@@ -12,7 +13,6 @@ import {
   WalletMultiButton,
   WalletConnectButton,
 } from "@solana/wallet-adapter-react-ui";
-
 import "@solana/wallet-adapter-react-ui/styles.css";
 
 const AirdropLibrary = () => {
@@ -21,7 +21,7 @@ const AirdropLibrary = () => {
      <motion.h1 
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.8 }}
-          className='heading'
+          className = 'animate__animated animate__bounce'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}

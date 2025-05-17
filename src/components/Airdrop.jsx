@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { useWallet, useConnection } from "@solana/wallet-adapter-react";
 import "./../App.css";
+import { useNavigate } from "react-router-dom";
 // import DataInput from "./assets/Input";
 const Airdrop = () => {
   const wallet = useWallet();
+  const navigate = useNavigate()
 
   const { connection } = useConnection();
 
@@ -20,7 +22,10 @@ const Airdrop = () => {
       alert("Please enter a valid public key");
       return;
     }
-    console.log(amount);
+    if(!amount){
+      alert("Please enter a valid amount");
+      return;
+    }
     await connection.requestAirdrop(wallet.publicKey, amount * 1000000000);
 
     alert(`Airdrop to user ${wallet.publicKey.toString()}`);
@@ -60,7 +65,15 @@ const Airdrop = () => {
         >
           Show Balance
         </button>
-        {value && <h2>Your Balance is : {balance / 1000000000} SOL</h2>}
+        {value && <h2 style={{color:"white"}} >Your Balance is : {balance / 1000000000} SOL</h2>}
+      </div>
+      <div>
+         <button
+          style={{ margin: "10px" }}
+          onClick={()=>{ navigate("/")}}
+        >
+         Go Back
+        </button>
       </div>
     </>
   );

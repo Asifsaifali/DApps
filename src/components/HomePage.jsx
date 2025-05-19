@@ -25,7 +25,7 @@ const HomePage = () => {
       >
         Welcome to the Solana dApp..!
       </motion.h1>
-      <motion.h3
+      <motion.h2
        whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.8 }}
         className="animate__animated animate__bounce"
@@ -33,10 +33,10 @@ const HomePage = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
         id="heading"
-        style={{ fontFamily: "cursive", margin: "20px" }}
+        style={{ fontFamily: "cursive", margin: "10px" }}
       >
         "Connect your wallet, unlock the power of Solana."
-      </motion.h3>
+      </motion.h2>
 
       <motion.button
         onClick={showAirdrop}

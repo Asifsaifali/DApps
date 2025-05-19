@@ -14,10 +14,6 @@
 - Solana Wallet Adapter (or Web3Modal / RainbowKit / wagmi for EVM)
 - Solana Web3.js or Ethers.js
 
-## 📸 Demo
-
-(![Demo](https://wallet-adapter-three.vercel.app/))
-
 ---
 
 ## 🛠️ Tech Stack
@@ -32,27 +28,26 @@
 
 ### 1. Clone the repository
 
-    ```bash
+```bash
     git clone https://github.com/your-username/your-repo-name.git
     cd your-repo-name
 
 ### 2. Install dependencies
     
-    ``` bash
+```bash
     npm run install
 
 ### 3. Run the app locally
-        ```bash
-        Copy code
-        npm start
+    ```bash
+    Copy code
+    npm start
 
 Visit: http://localhost:3000
 
 ### 4. 🔗Wallet Adapter Setup
-         Required Packages:
-            ```bash
-            Copy code
-            npm install @solana/web3.js \
-            @solana/wallet-adapter-react \
-            @solana/wallet-adapter-wallets \
-            @solana/wallet-adapter-react-ui
+    Required Packages:
+    ```bash
+    npm install @solana/web3.js \
+    @solana/wallet-adapter-react \
+    @solana/wallet-adapter-wallets \
+    @solana/wallet-adapter-react-ui

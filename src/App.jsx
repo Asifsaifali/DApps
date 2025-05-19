@@ -1,16 +1,5 @@
 import './App.css'
-import {
-  ConnectionProvider,
-  WalletProvider,
-} from "@solana/wallet-adapter-react";
-import {
-  WalletModalProvider,
-  WalletDisconnectButton,
-  WalletMultiButton,
-  WalletConnectButton,
-} from "@solana/wallet-adapter-react-ui";
-
-import "@solana/wallet-adapter-react-ui/styles.css";
+import  { AnimatePresence } from 'framer-motion';
 import HomePage from './components/HomePage.jsx';
 import AirdropLibrary from './components/AirdropLibrary.jsx';
 
@@ -20,7 +9,7 @@ import TxnLibrary from './components/TxnLibrary.jsx';
 function App() {
   return (
     <>    
-    
+    <AnimatePresence>
      <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -28,6 +17,7 @@ function App() {
         <Route path="/transaction" element={<TxnLibrary/>} /> 
       </Routes>
     </Router>
+    </AnimatePresence>
     </> 
   );
 }

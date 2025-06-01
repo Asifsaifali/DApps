@@ -68,11 +68,9 @@ npm install @solana/web3.js \
 ```
 ## 🖼️ Screenshots
 
-### 🔐 Home Page
-![HomePage](./assets/Home.png)
+![Screenshot](./src/assets/Home.png)
 
-### 🔐 Wallet Connected
-![Wallet Connected](./assets/Aidrop.png)
+![Screenshot](./src/assets/Aidrop.png)
 
-### 📨 Sending Transaction
-![Send Transaction](./assets/Trans.png)
+![Screenshot](./src/assets/Trans.png)
+

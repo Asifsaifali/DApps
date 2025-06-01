@@ -1,4 +1,4 @@
-# 🪙 DApp with Wallet Adapter
+# 🪙Solana Wallet Adapter
 
 ## Project Description
 
@@ -9,13 +9,9 @@
 - Transaction signing
 - Blockchain interaction (read/write)
 - Fully reactive UI with Web3 state
+- wallet-adapter-react-ui
 
-### 🛠 Tech Stack
-
-- React.js
-- Solana Wallet Adapter (or Web3Modal / RainbowKit / wagmi for EVM)
-- Solana Web3.js or Ethers.js
-
+Visit the [Demo](https://wallet-adapter-three.vercel.app) to see it in action!
 
 ---
 
@@ -28,15 +24,15 @@
 
 ## 📁 Project Structure
 
-- src/
+- src
 - ├── components/ # Reusable UI components
-    ├── Airdrop.jsx
-    ├── ConnectButton.jsx
-    ├── TransactionForm.jsx
-    ├── TransactionList.jsx
-    ├── WalletInfo.jsx
-- ├── contexts/ # Wallet provider and setup
-- ├── hooks/ # Custom hooks for wallet utilities
+   - ├── Airdrop.jsx
+   - ├── ConnectButton.jsx
+   - ├── TransactionForm.jsx
+   - ├── TransactionList.jsx
+   - ├── WalletInfo.jsx
+- ├── contexts
+   - ├── WalletProvider.jsx
 - ├── App.jsx
 - └── index.jsx
 ---
@@ -52,12 +48,12 @@ cd Wallet-Adapter
 ### 2. Install dependencies
     
 ```bash
-    npm run install
+npm run install
 ```
 ### 3. Run the app locally
 ```bash
-    Copy code
-    npm start
+Copy code
+npm start
 ```
 Visit: http://localhost:3000
 
@@ -65,8 +61,8 @@ Visit: http://localhost:3000
 
 Required Packages:
 ```bash
-    npm install @solana/web3.js \
-    @solana/wallet-adapter-react \
-    @solana/wallet-adapter-wallets \
-    @solana/wallet-adapter-react-ui
+npm install @solana/web3.js \
+@solana/wallet-adapter-react \
+@solana/wallet-adapter-wallets \
+@solana/wallet-adapter-react-ui
 ```

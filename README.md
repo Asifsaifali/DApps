@@ -66,3 +66,13 @@ npm install @solana/web3.js \
 @solana/wallet-adapter-wallets \
 @solana/wallet-adapter-react-ui
 ```
+## 🖼️ Screenshots
+
+### 🔐 Home Page
+![HomePage](./assets/Home.png)
+
+### 🔐 Wallet Connected
+![Wallet Connected](./assets/Aidrop.png)
+
+### 📨 Sending Transaction
+![Send Transaction](./assets/Trans.png)
